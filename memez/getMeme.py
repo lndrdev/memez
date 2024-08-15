@@ -3,11 +3,11 @@ import random
 
 
 def getMeme(subreddit: str = None, json: bool = False):
-    if bool == True:
+    if json == True:
         request = requests.get(f"https://meme-api.com/gimme/{subreddit}" if subreddit else f"https://meme-api.com/gimme/")
-        x = request.json()
-        return x
+        request_json = request.json()
+        return request_json
     else:
         request = requests.get(f"https://meme-api.com/gimme/{subreddit}" if subreddit else f"https://meme-api.com/gimme/")
-        x = request.json()
-        return x["url"]
+        request_json = request.json()
+        return request_json["url"]
