@@ -5,3 +5,9 @@ Python Wrapper for https://meme-api.com/gimme
 ```python
 pip install meme-api
 ```
+
+## Usage
+```python
+# Returns a random png from a subreddit
+memez.getMeme()
+```
