@@ -1,3 +1,3 @@
-__version__ = "0.0.5"
+__version__ = "0.0.6"
 
-from .getMeme import getMeme
+from .getMeme import getMeme, get_embed
